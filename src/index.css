@@ -13,4 +13,7 @@
   body{
     font-family: 'Roboto Light', sans-serif;
   }
+  :root {
+    --navbar-height: 106px;
+  }
   

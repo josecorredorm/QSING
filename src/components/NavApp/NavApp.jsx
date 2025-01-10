@@ -6,7 +6,7 @@ import './NavApp.css';
 
 function CollapsibleExample() {
   return (
-    <Navbar collapseOnSelect expand="lg" className="bg-body-white">
+    <Navbar collapseOnSelect expand="lg" className="bg-body-white fixed-top bg-white">
       <Container>
         <Navbar.Brand href="#home">
         <img

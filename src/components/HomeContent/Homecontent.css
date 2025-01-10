@@ -1,13 +1,108 @@
 .AdnContainer{
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content:space-around;
     background-color: #1D70B7;
     height: 226px;
+    width: 100%;
+    padding: 10px;
 }
 .video{
     position: 'absolute';
           top: 0;
           left: 0;
           width: '100%';
-          height: '100%';
+          height: '90%';
+}
+.AdnText{
+    width: 30%;
+}
+.AdnText h1{
+    font-family: 'raleway';
+    font-weight:bold;
+    color: #505a61;
+    font-style: italic;
+}
+
+.AdnText p{
+    color: white;
+    font-weight:700;
+    letter-spacing: 1.1px;
+    font-size: 13px;
+    text-align: justify;
+}
+.GolContainer{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content:space-around;
+    background-color: white;
+    height: 363px;
+    width: 100%;
+    padding: 5px;
+}
+.ImgContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 50%;
+}
+
+.ImgContainer img{
+    width: 70%;
+    height: 70%;
+}
+.Goltext{
+    padding: 5%;
+    display: flex;
+    /* flex-wrap: wrap; */
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    width: 50%;
+}
+.Goltext p{
+    font-size: 13px;
+    padding-top: 5px;
+    text-align: justify;
+}
+.Goltext h6{
+    font-size: 14px;
+    font-weight: bold;
+    color: #1D70B7;
+}
+.ProjectContainer{
+    background-image: url("./bgproyectos_1.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-width: 2000px;
+    width: 100%;
+    height: 750px;
+    margin: 0;
+
+}
+.ProjectTextContainer{
+    padding: 0px 15px;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    padding-right: 30%;
+}
+.ProjectTextContainer p{
+    font-size: 13px;
+}
+.ServicesContainer{
+    background-image: url("./bg_services.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-width: 2000px;
+    width: 100%;
+    height: 750px;
+    margin: 0;
 }

@@ -96,13 +96,63 @@
 .ProjectTextContainer p{
     font-size: 13px;
 }
-.ServicesContainer{
+/* .ServicesContainer{
     background-image: url("./bg_services.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     max-width: 2000px;
     width: 100%;
+    max-height: 800px;
     height: 750px;
     margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items:center;
+    padding-left: 40%;
+    justify-content: start;
+}
+.ServicesContainer h1{
+    width: 100%;
+} */
+/* .ServicesCardContainer{
+    
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+} */
+
+.ServicesContainer {
+    background-image: url("./bg_services.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-width: 2000px;
+    width: 100%;
+    max-height: 800px;
+    height: 750px;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch; /* Estira las Cards a la misma altura */
+    justify-content: center; /* Centra las Cards horizontalmente */
+    gap: 20px; /* Espaciado entre Cards */
+    padding: 20px;
+    padding-left: 40%;
+}
+
+.ServicesContainer h1 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.card {
+    flex: 1 1 calc(25% - 20px); /* 4 Cards por fila */
+    display: flex;
+    flex-direction: column;
+    max-width: 19em; /* Limita el ancho máximo */
+    height: auto; /* Altura dinámica */
 }

@@ -1,7 +1,6 @@
 import React from 'react';
 import './HomeContent.css';
-import Container from 'react-bootstrap/esm/Container';
-
+import { Container, Row, Col, Card } from 'react-bootstrap';
 const HomeContent = () => {
   return (
     <>
@@ -45,13 +44,90 @@ const HomeContent = () => {
             <p>Hemos realizado más de 5.000M2 de diseños técnicos y arquitectónicos para la apertura de nuevas tiendas, sedes administrativas, centros de atención y ventas de nuestros clientes en todo el territorio nacional.</p>
             </Container>
         </Container>  
-    <Container className='ServicesContainer'>
-    
-    
+    {/* <Container className='ServicesContainer'>
+        <h1>
+            NUESTROS SERVICIOS
+        </h1>
+            <Card style={{ width: '19em', height: '13em', backgroundColor: '#81D741'}}>
+                <Card.Body>
+                    <Card.Title>DISEÑO</Card.Title>
+                    <Card.Text style={{color: 'white', fontSize: '13px'}}>
+                    Diseño arquitectónico, estructural, hidrosanitario, red contraincendios, sistemas de aire acondicionado, 
+                    eléctrico y cableado estructurado de todo tipo de edificaciones.
+                    </Card.Text>
+                </Card.Body>
+            </Card>
+            <Card style={{ width: '19em', height: '13em' }}>
+                <Card.Body>
+                    <Card.Title>OBRAS DE INGENIERÍA</Card.Title>
+                    <Card.Text>
+                    Desarrollo y ejecución de Obras de ingeniería civil y eléctrica, estructura metálica, movimiento de tierras.
+                    </Card.Text>
+                </Card.Body>
+            </Card>
+            <Card style={{ width: '19em', height: '13em' }}>
+                <Card.Body>
+                    <Card.Title>ESTAURACIONES Y REMODELACIONES</Card.Title>
+                    <Card.Text>
+                    Restauraciones y remodelaciones de edificaciones industriales, comerciales y residenciales.
+                    </Card.Text>
+                </Card.Body>
+            </Card>
+            <Card style={{ width: '19em', height: '13em', backgroundColor: '#1E73BE'}}>
+                <Card.Body>
+                    <Card.Title>MANTENIMIENTO</Card.Title>
+                    <Card.Text style={{color: 'white'}}>
+                    Mantenimiento preventivo y correctivo de instalaciones y edificaciones.
+                    </Card.Text>
+                </Card.Body>
+            </Card>         
+    </Container> */}
+<Container className="ServicesContainer">
+      <h1>NUESTROS SERVICIOS</h1>
+      <Row className="gx-4 gy-4">
+        <Col sm={8} md={6} lg={6}>
+          <Card className="h-100" style={{ backgroundColor: '#81D741' }}>
+            <Card.Body>
+              <Card.Title>DISEÑO</Card.Title>
+              <Card.Text style={{ color: 'white', fontSize: '13px' }}>
+                Diseño arquitectónico, estructural, hidrosanitario, red contraincendios, sistemas de aire acondicionado, 
+                eléctrico y cableado estructurado de todo tipo de edificaciones.
+              </Card.Text>
+            </Card.Body>
+          </Card>
+        </Col>
+        <Col sm={8} md={6} lg={6}>
+          <Card className="h-100">
+            <Card.Body>
+              <Card.Title>OBRAS DE INGENIERÍA</Card.Title>
+              <Card.Text>
+                Desarrollo y ejecución de Obras de ingeniería civil y eléctrica, estructura metálica, movimiento de tierras.
+              </Card.Text>
+            </Card.Body>
+          </Card>
+        </Col>
+        <Col sm={8} md={6} lg={6}>
+          <Card className="h-100">
+            <Card.Body>
+              <Card.Title>RESTAURACIONES Y REMODELACIONES</Card.Title>
+              <Card.Text>
+                Restauraciones y remodelaciones de edificaciones industriales, comerciales y residenciales.
+              </Card.Text>
+            </Card.Body>
+          </Card>
+        </Col>
+        <Col sm={8} md={6} lg={6}>
+          <Card className="h-100" style={{ backgroundColor: '#1E73BE' }}>
+            <Card.Body>
+              <Card.Title>MANTENIMIENTO</Card.Title>
+              <Card.Text style={{ color: 'white' }}>
+                Mantenimiento preventivo y correctivo de instalaciones y edificaciones.
+              </Card.Text>
+            </Card.Body>
+          </Card>
+        </Col>
+      </Row>
     </Container>
-    <div >
-
-    </div>
     </>
   )
 }
